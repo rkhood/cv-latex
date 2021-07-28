@@ -1,0 +1,95 @@
+% LaTeX resume using res.cls
+%
+% Template made by RH, adapted from Michael DeCorte's resume style (1989)
+%
+% -- RH
+
+\documentclass[11pt, line, resmargin]{res}
+\usepackage{xcolor}
+\usepackage[colorlinks]{hyperref}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{a4paper, left=0.55in, top=0.7in, right=1.8in, bottom=0.7in}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+\makeatletter
+\newcommand*\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\newcommand\subheading{\bf\@setfontsize\subheading{12 pt}{12 pt}}
+\makeatother
+
+\begin{document}
+
+\name{Your Name}
+
+\address{$\begin{array}{l} 
+\includegraphics*[scale=0.025]{imgs/email.png}\\[-12pt] \mbox{} 
+\end{array}$\hspace{-3.5pt}: \href{Email address}{Email address}\hspace{2mm}$\begin{array}{l} 
+\includegraphics*[scale=0.035]{imgs/GitHubMark.png}\\[-12pt] \mbox{} 
+\end{array}$\hspace{-3.5pt}: \href{Github}{Github}$\begin{array}{l} 
+\includegraphics*[scale=0.065]{imgs/medium_logo.png}\\[-12pt] \mbox{} 
+\end{array}$\hspace{-3.5pt}: \href{Medium page}{Medium page}$\begin{array}{l} 
+\includegraphics*[scale=0.015]{imgs/phone.png}\\[-12pt] \mbox{} 
+\end{array}$\hspace{-3.5pt}: Phone number}
+
+\begin{resume}
+
+\section{SUMMARY}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo quis tortor non faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget egestas orci. Donec facilisis mi at nisl molestie fringilla.
+
+\section{EDUCATION}
+{\subheading Degree Title (XXXX-XXXX) $\bigcdot$ University} \\
+Additional Information $\bigcdot$  Additional Information
+\vskip -0.5em
+{\subheading Degree Title (XXXX-XXXX) $\bigcdot$ University} \\
+Additional Information $\bigcdot$  Additional Information
+\vskip -0.5em
+{\subheading Degree Title (XXXX-XXXX) $\bigcdot$ University} \\
+Additional Information $\bigcdot$  Additional Information
+ 
+\section{EXPERIENCE}
+             {\subheading Current role (XXXX--)} \\
+	     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo quis tortor non faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget egestas orci. Donec facilisis mi at nisl molestie fringilla. Morbi libero eros, fringilla vitae diam non, placerat hendrerit quam.
+	     	   \begin{itemize}
+	     	   \setlength\itemsep{-0.1em}
+	     	   \item Key point 1
+	     	   \item Key point 2
+	     	   \item Key point 3
+	     	   \item Key point 4
+	     	   \item Key point 5
+	     	   \end{itemize}
+	     {\subheading Previous role (XXXX--XXXX)} \\
+	    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo quis tortor non faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. \\~\\
+	     {\subheading Previous role (XXXX--XXXX)} \\
+	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo quis tortor non faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. \\~\\
+	     {\subheading Previous role (XXXX--XXXX)} \\
+	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo quis tortor non faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. \\~\\
+	     {\subheading Further Experience}
+	     	     \begin{itemize}
+	     	     \setlength\itemsep{-0.1em}
+	      	     \item Experience 1
+	              \item Experience 2
+	              \item Experience 3
+	              \item Experience 4
+	              \item Experience 5
+	     	     \end{itemize}
+
+\section{SKILLS}
+{\subheading{Highlight skill here}} $\bigcdot$ Skills 1, 2, 3 $\bigcdot$ Skills 4, 5, 6 $\bigcdot$ Skills 7, 8, 9
+
+ \end{resume}
+\end{document}
+
+
+
+
+
+
+
+
